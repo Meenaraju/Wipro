@@ -1,6 +1,4 @@
-package javaapplication1;
-//import java.util.*;
-
+  package javaapplication1;
 import java.util.Arrays;
 
 public class JavaApplication1 {
@@ -25,26 +23,11 @@ public class JavaApplication1 {
          s4+=s2.charAt(i);
      }
      String s5 = s3+s4;
-     String s6="";
-     String s7="";
-     String s8="";
-     String s9="";
-     String s10="";
-     for(int i=0;i<8;i++){
-         s6+=s5.charAt(i);
-         }
-     for(int i=8;i<12;i++){
-         s7+=s5.charAt(i);
-     }
-     for(int i=12;i<15;i++){
-         s8+=s5.charAt(i);
-     }
-     for(int i=15;i<17;i++){
-         s9+=s5.charAt(i);
-     }
-     for(int i=17;i<s5.length();i++){
-         s10+=s5.charAt(i);
-     }
-     System.out.print(s6+s8+"@"+s9+"$"+s7+s10);
+      System.out.print(s5.substring(0,8));
+      System.out.print(s5.substring(12,15)+"@");
+      System.out.print(s5.substring(15,17)+"$");
+      System.out.print(s5.substring(8,12));
+      System.out.print(s5.substring(17,19));
     }
 }
+
