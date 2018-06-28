@@ -19,12 +19,9 @@ import java.util.*;
        }
        for(int i=0;i<n;i++){
            if(in<in1 || in==0 || in1==0){
-               sum=sum+a[i];
-               
-           }
-           else{
-               a[in]=0;
-               a[in1]=0;
+               for(int k=in;k<=in1;k++){
+                   a[k]=0;
+               }
                sum=sum+a[i];
            }
        }
@@ -32,3 +29,4 @@ import java.util.*;
            }
     
 }
+
